@@ -1,0 +1,5 @@
+!#/usr/bin/env bash
+
+echo $?
+tmux send-keys -t 1 'clear' Enter
+tmux send-keys -t 1 'ruby sieve.rb' Enter
