@@ -57,3 +57,14 @@ puts is_unique?(b)
 puts '================='
 puts is_unique?(c)
 puts '================='
+
+# Note: I didn't think to wonder about the character set
+# or realize that if you had a string longer than the
+# number of possible characters in a given character set
+# it would thus contain repeats
+#
+# Checking only from the current character on is a slight
+# optimization... this relies on the fact that you
+# already compared the first char to every char, so
+# comparing the second char and the first char already
+# happened on a previous pass.
